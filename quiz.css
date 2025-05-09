@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(mathbg.jpg);
+    font-size: 20px;
+    background-size: cover;
+}
+
+.group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.group.operator {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 2px solid brown;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: burlywood;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.group.comparison {
+    border: 2px solid brown;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: burlywood;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.container {
+    background: burlywood;
+    padding: 20px;
+    border: 2px solid bisque;
+    border-radius: 10px;
+    width: 250px;
+    
+}
+
+.title {
+    font-weight: bold;
+    background-color: burlywood;
+    border: 2px solid brown;
+    color: brown;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    font-size: 24px;
+    margin: 20px;
+
+}
+
+.p {
+    margin: 18px;
+    font-size: 25px;
+}
+
+button {
+    padding:10px;
+    background-color: burlywood;
+    color: brown;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 16px;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: brown;
+    color: burlywood;
+}
+
+@keyframes fadeIn {
+    from  {
+        opacity: 0; transform: translateY(10px);
+    }
+    to {
+        opacity: 1; transform: translateY(0);
+    }
+}

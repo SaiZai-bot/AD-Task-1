@@ -1,19 +1,69 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(mathbg.jpg);
+    background-size: cover;
+    font-size: 20px;
+
+}
+
 .container {
-    border: 1px solid #ccc;
+    border: 1px solid brown;
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 20px;
-    width: fit-content;
-    background-color: black;
-    color: bisque;
+    width: 80%;
+    max-width: 600px;
+    background-color: burlywood;
+    box-shadow: 16px;
+    color: brown;
     display: inline-block;
+    animation: fadeIn 0.6s ease-in-out;
+    
+    
 }
 
 .title {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
+    margin: 10px;
 }
 
 .p {
-    margin: 5px;
+    margin: 18px;
+    font-size: 18px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    background-color: burlywood;
+    color: brown;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 16px;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: brown;
+    color: burlywood;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; transform: translateY(10px);
+    }
+    to {
+        opacity: 1; transform: translateY(0);
+    }
 }
