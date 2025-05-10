@@ -127,9 +127,11 @@ Looping -->
         echo "</div>";
 
         echo "</div>";
+
     ?>
     <a href="index.php">
         <button>Go Back</button>
     </a>
+
 </body>
 </html>
